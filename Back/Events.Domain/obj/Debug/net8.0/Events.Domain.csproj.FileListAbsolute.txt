@@ -1,0 +1,12 @@
+C:\Users\joao\Desktop\Estudos\Events\Back\Events.Domain\bin\Debug\net8.0\Events.Domain.deps.json
+C:\Users\joao\Desktop\Estudos\Events\Back\Events.Domain\bin\Debug\net8.0\Events.Domain.dll
+C:\Users\joao\Desktop\Estudos\Events\Back\Events.Domain\bin\Debug\net8.0\Events.Domain.pdb
+C:\Users\joao\Desktop\Estudos\Events\Back\Events.Domain\obj\Debug\net8.0\Events.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\joao\Desktop\Estudos\Events\Back\Events.Domain\obj\Debug\net8.0\Events.Domain.AssemblyInfoInputs.cache
+C:\Users\joao\Desktop\Estudos\Events\Back\Events.Domain\obj\Debug\net8.0\Events.Domain.AssemblyInfo.cs
+C:\Users\joao\Desktop\Estudos\Events\Back\Events.Domain\obj\Debug\net8.0\Events.Domain.csproj.CoreCompileInputs.cache
+C:\Users\joao\Desktop\Estudos\Events\Back\Events.Domain\obj\Debug\net8.0\Events.Domain.sourcelink.json
+C:\Users\joao\Desktop\Estudos\Events\Back\Events.Domain\obj\Debug\net8.0\Events.Domain.dll
+C:\Users\joao\Desktop\Estudos\Events\Back\Events.Domain\obj\Debug\net8.0\refint\Events.Domain.dll
+C:\Users\joao\Desktop\Estudos\Events\Back\Events.Domain\obj\Debug\net8.0\Events.Domain.pdb
+C:\Users\joao\Desktop\Estudos\Events\Back\Events.Domain\obj\Debug\net8.0\ref\Events.Domain.dll
