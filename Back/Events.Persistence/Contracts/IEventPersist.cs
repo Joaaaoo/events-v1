@@ -11,6 +11,6 @@ namespace Events.Persistence.Contracts
     {
         Task<Event[]> GetAllEventsByThemeAsync(string theme, bool IncludeSpeaker = false );
         Task<Event[]> GetAllEventsAsync( bool IncludeSpeaker = false );
-        Task<Event[]> GetAllEventByIdAsync(int EventId, bool IncludeSpeaker = false );
+        Task<Event> GetAllEventByIdAsync(int eventId, bool IncludeSpeaker = false );
     }
 }

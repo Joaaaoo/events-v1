@@ -36,7 +36,7 @@ namespace Events.Persistence
         }
 
     
-        public async Task<Event> GetEventByIdAsync(int eventId, bool includeSpeaker = false)
+        public async Task<Event> GetAllEventByIdAsync(int eventId, bool includeSpeaker = false)
         {
            IQueryable<Event> query = _context.Events.Include(e => e.Batchs).Include(e => e.Socials);
             if(includeSpeaker){

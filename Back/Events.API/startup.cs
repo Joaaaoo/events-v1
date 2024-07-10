@@ -2,8 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Events.Application;
+using Events.Application.Contracts;
 using Events.Persistence;
 using Events.Persistence.Context;
+using Events.Persistence.Contracts;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -33,6 +36,9 @@ namespace Events.API;
                 context => context.UseSqlite(Configuration.GetConnectionString("Default"))
             );
             services.AddControllers();
+            services.AddScoped<IEventsService, EventService>();
+            services.AddScoped<IBasicPersist, BasicPersistence>();
+            services.AddScoped<IEventPersist, EventsPersistence>();
             services.AddCors();
             services.AddSwaggerGen(c =>
             {
