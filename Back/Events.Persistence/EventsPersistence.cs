@@ -12,6 +12,7 @@ namespace Events.Persistence
         public EventsPersistence(EventsContext context)
         {
             _context = context;
+            _context.ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;
         }
 
         public async Task<Event[]> GetAllEventsAsync(bool includeSpeaker = false)

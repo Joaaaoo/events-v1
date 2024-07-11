@@ -35,7 +35,7 @@ namespace Events.API;
             services.AddDbContext<EventsContext>(
                 context => context.UseSqlite(Configuration.GetConnectionString("Default"))
             );
-            services.AddControllers();
+            services.AddControllers().AddNewtonsoftJson(x => x.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
             services.AddScoped<IEventsService, EventService>();
             services.AddScoped<IBasicPersist, BasicPersistence>();
             services.AddScoped<IEventPersist, EventsPersistence>();

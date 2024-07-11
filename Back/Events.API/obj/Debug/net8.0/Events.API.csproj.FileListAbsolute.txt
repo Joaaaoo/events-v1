@@ -133,3 +133,7 @@ C:\Users\joao\Desktop\Estudos\Events\Back\Events.API\bin\Debug\net8.0\Events.App
 C:\Users\joao\Desktop\Estudos\Events\Back\Events.API\bin\Debug\net8.0\Events.Domain.pdb
 C:\Users\joao\Desktop\Estudos\Events\Back\Events.API\bin\Debug\net8.0\Events.Persistence.dll
 C:\Users\joao\Desktop\Estudos\Events\Back\Events.API\bin\Debug\net8.0\Events.Persistence.pdb
+C:\Users\joao\Desktop\Estudos\Events\Back\Events.API\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\joao\Desktop\Estudos\Events\Back\Events.API\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\joao\Desktop\Estudos\Events\Back\Events.API\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\joao\Desktop\Estudos\Events\Back\Events.API\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
