@@ -3,11 +3,12 @@ import { EventsApiServiceService } from '../../services/events-api-service.servi
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { Observable } from 'rxjs';
+import { ReturnBtnComponent } from '../../components/return-btn/return-btn.component';
 
 @Component({
   selector: 'app-edit-event',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, ReturnBtnComponent],
   templateUrl: './edit-event.component.html',
   styleUrl: './edit-event.component.scss',
 })

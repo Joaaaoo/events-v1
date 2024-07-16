@@ -21,17 +21,4 @@ import { RouterModule } from '@angular/router';
   templateUrl: './table.component.html',
   styleUrl: './table.component.scss',
 })
-export class TableComponent implements OnInit {
-  events$ = new Observable<Events[]>();
-
-  constructor(private apiService: EventsApiServiceService) {}
-
-  ngOnInit(): void {
-    this.receiveEvents();
-  }
-
-  receiveEvents() {
-    this.events$ = this.apiService.getEvents();
-    console.log(this.events$);
-  }
-}
+export class TableComponent {}

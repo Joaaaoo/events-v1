@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { InfoEventComponent } from './info-event.component';
+import { ReturnBtnComponent } from './return-btn.component';
 
-describe('InfoEventComponent', () => {
-  let component: InfoEventComponent;
-  let fixture: ComponentFixture<InfoEventComponent>;
+describe('ReturnBtnComponent', () => {
+  let component: ReturnBtnComponent;
+  let fixture: ComponentFixture<ReturnBtnComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [InfoEventComponent]
+      imports: [ReturnBtnComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(InfoEventComponent);
+    fixture = TestBed.createComponent(ReturnBtnComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

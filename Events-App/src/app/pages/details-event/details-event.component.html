@@ -1,1 +1,52 @@
-<p>details-event works!</p>
+<section class="margin-lateral content-section">
+    <app-return-btn></app-return-btn>
+
+    <section class="info-section">
+        <div class="surface-section" *ngIf="eventData$ | async as event" class="wrapper-table">
+            <div class="font-medium text-3xl text-900 mb-3">Event Information</div>
+            <div class="text-500 mb-5">Litle brief</div>
+            <ul class="list-none p-0 m-0">
+
+                <li class="flex align-items-center py-3 px-2 border-top-1 surface-border flex-wrap">
+                    <div class="text-500 w-6 md:w-2 font-medium">Title</div>
+                    <div class="text-900 w-full md:w-8 md:flex-order-0 flex-order-1">{{event.theme}}</div>
+                </li>
+
+                <li class="flex align-items-center py-3 px-2 border-top-1 surface-border flex-wrap">
+                    <div class="text-500 w-6 md:w-2 font-medium">Location</div>
+                    <div class="text-900 w-full md:w-8 md:flex-order-0 flex-order-1">{{event.location}}</div>
+                </li>
+
+                <li class="flex align-items-center py-3 px-2 border-top-1 surface-border flex-wrap">
+                    <div class="text-500 w-6 md:w-2 font-medium">Date</div>
+                    <div class="text-900 w-full md:w-8 md:flex-order-0 flex-order-1">{{event.date}}</div>
+                </li>
+
+                <li class="flex align-items-center py-3 px-2 border-top-1 surface-border flex-wrap">
+                    <div class="text-500 w-6 md:w-2 font-medium">Attendence</div>
+                    <div class="text-900 w-full md:w-8 md:flex-order-0 flex-order-1">{{event.attendence}}</div>
+                </li>
+
+                <li class="flex align-items-center py-3 px-2 border-top-1 surface-border flex-wrap">
+                    <div class="text-500 w-6 md:w-2 font-medium">E-mail</div>
+                    <div class="text-900 w-full md:w-8 md:flex-order-0 flex-order-1">{{event.email}}</div>
+                </li>
+
+                <li class="flex align-items-center py-3 px-2 border-top-1 surface-border flex-wrap">
+                    <div class="text-500 w-6 md:w-2 font-medium">Batchs</div>
+                    <div class="text-900 w-full md:w-8 md:flex-order-0 flex-order-1">{{event.batchs}}</div>
+                </li>
+
+                <li class="flex align-items-center py-3 px-2 border-top-1 surface-border flex-wrap">
+                    <div class="text-500 w-6 md:w-2 font-medium">Socials</div>
+                    <div class="text-900 w-full md:w-8 md:flex-order-0 flex-order-1">{{event.socials}}</div>
+                </li>
+
+                <li class="flex align-items-center py-3 px-2 border-top-1 surface-border flex-wrap">
+                    <div class="text-500 w-6 md:w-2 font-medium">Image</div>
+                    <div class="text-900 w-full md:w-8 md:flex-order-0 flex-order-1">{{event.imgURL}}</div>
+                </li>
+            </ul>
+        </div>
+    </section>
+</section>

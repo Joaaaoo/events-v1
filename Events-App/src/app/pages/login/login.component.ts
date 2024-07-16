@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
+import { CheckboxModule } from 'primeng/checkbox';
 
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [],
+  imports: [CheckboxModule],
   templateUrl: './login.component.html',
-  styleUrl: './login.component.scss'
+  styleUrl: './login.component.scss',
 })
-export class LoginComponent {
-
-}
+export class LoginComponent {}
