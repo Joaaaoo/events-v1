@@ -1,5 +1,16 @@
 <section class="margin-lateral content-section">
     <app-return-btn></app-return-btn>
 
-
+    <form [formGroup]="formulario" (ngSubmit)="salvarDados()">
+        <article>
+            <fieldset class="itemFormulario">
+                <label for="theme">
+                    theme:
+                    <span>*</span>
+                </label>
+                <input formControlName="theme" id="theme" pInputText type="text" />
+            </fieldset>
+            <button type="submit">Salvar</button>
+        </article>
+    </form>
 </section>
