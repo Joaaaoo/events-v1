@@ -1,18 +1,21 @@
 import { Component, OnInit } from '@angular/core';
 import { TableComponent } from '../../components/table/table.component';
 import { CommonModule } from '@angular/common';
-import { Observable } from 'rxjs';
+import { BehaviorSubject, map, Observable } from 'rxjs';
 import { Events } from '../../models/events';
 import { EventsApiServiceService } from '../../services/events-api-service.service';
 import { ButtonModule } from 'primeng/button';
 import { ToolbarModule } from 'primeng/toolbar';
 import { RouterModule } from '@angular/router';
 import { TableModule } from 'primeng/table';
+import { SearchComponent } from '../../components/search/search.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
   imports: [
+    TableComponent,
+    SearchComponent,
     TableModule,
     CommonModule,
     ButtonModule,
