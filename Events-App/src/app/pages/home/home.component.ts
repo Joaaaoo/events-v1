@@ -9,6 +9,7 @@ import { ToolbarModule } from 'primeng/toolbar';
 import { RouterModule } from '@angular/router';
 import { TableModule } from 'primeng/table';
 import { SearchComponent } from '../../components/search/search.component';
+import { ProgressSpinnerModule } from 'primeng/progressspinner';
 
 @Component({
   selector: 'app-home',
@@ -21,11 +22,13 @@ import { SearchComponent } from '../../components/search/search.component';
     ButtonModule,
     ToolbarModule,
     RouterModule,
+    ProgressSpinnerModule,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
 export class HomeComponent implements OnInit {
+  loading: boolean = true;
   events$ = new Observable<Events[]>();
 
   constructor(private apiService: EventsApiServiceService) {}
@@ -36,5 +39,8 @@ export class HomeComponent implements OnInit {
 
   receiveEvents() {
     this.events$ = this.apiService.getEvents();
+    setTimeout(() => {
+      this.loading = false;
+    }, 2000);
   }
 }

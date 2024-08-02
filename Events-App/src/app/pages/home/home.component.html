@@ -8,5 +8,7 @@
         </div>
     </p-toolbar>
 
-    <app-table [events]="events$ | async "></app-table>
+    <p-progressSpinner *ngIf="loading"></p-progressSpinner>
+
+    <app-table *ngIf="!loading" [events]="events$ | async "></app-table>
 </section>
